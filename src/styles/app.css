@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+    --font-vazir: "Vazirmatn";
+    --font-rokh: "Rokh";
+}
+
+@layer base {
+    * {
+        @apply font-vazir;
+    }
+}
