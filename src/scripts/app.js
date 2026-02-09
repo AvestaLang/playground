@@ -6,11 +6,26 @@ const elm_output = document.querySelector("#output");
 elm_input.addEventListener("input", (e) => {
   let text = e.target.innerText;
 
-  runCode(text);
+  runCode(text).then((r) => {
+    elm_output.srcdoc = r;
+    console.log(r);
+  });
 });
 
 const runCode = async (code) => {
   const go = new Go();
+
+  let log = "";
+
+  const originalLog = console.log;
+  console.log = (...args) => {
+    log = args.join(" ");
+  };
+
+  const originalError = console.error;
+  console.error = (...args) => {
+    log = args.join(" ");
+  };
 
   go.argv = ["core.wasm", code];
 
@@ -20,4 +35,9 @@ const runCode = async (code) => {
   );
 
   await go.run(result.instance);
+
+  console.log = originalLog;
+  console.error = originalError;
+
+  return log;
 };
