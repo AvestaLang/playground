@@ -1,3 +1,4 @@
+import "./wasm_exec.js";
 import "./tippy.js";
 
 const elm_input = document.querySelector("#input");
