@@ -2,12 +2,14 @@
 @import "./fonts.css";
 
 @theme {
-    --font-vazir: "Vazirmatn";
-    --font-rokh: "Rokh";
+  --font-vazir: "Vazirmatn";
+  --font-rokh: "Rokh";
+  --color-primary: #bd1f26;
+  --color-secondary: #f7d20f;
 }
 
 @layer base {
-    * {
-        @apply font-vazir;
-    }
+  * {
+    @apply font-vazir;
+  }
 }
