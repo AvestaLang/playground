@@ -1,0 +1,1 @@
+cp /home/tikrack/Projects/AvestaLang/core/core.wasm ./public
