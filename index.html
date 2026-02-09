@@ -1,15 +1,24 @@
 <!doctype html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8"/>
-    <link href="/favicon.png" rel="icon" type="image/png"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>اَوستا | اجرای آنلاین</title>
-    <link href="/src/styles/app.css" rel="stylesheet"/>
-</head>
-<body>
-<h1>اَوستا</h1>
-<script src="/src/scripts/wasm_exec.js"></script>
-<script src="/src/scripts/app.js" type="module"></script>
-</body>
+    <link href="/src/styles/app.css" rel="stylesheet" />
+  </head>
+  <body class="px-10">
+    <header class="h-19 w-full flex items-center">
+      <a class="flex gap-4 items-center" href="">
+        <img alt="" class="size-15" src="/favicon.png" />
+        <div class="flex flex-col justify-center">
+          <h1 class="font-rokh font-bold text-xl -m-1">اَوستا</h1>
+          <p class="text-sm">زبان برنامه نویسی فارسی</p>
+        </div>
+      </a>
+    </header>
+
+    <script src="/src/scripts/wasm_exec.js"></script>
+    <script src="/src/scripts/app.js" type="module"></script>
+  </body>
 </html>
