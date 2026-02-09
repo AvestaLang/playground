@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "./fonts.css";
+@import "./fontawesome.css";
+@import "./brands.min.css";
+@import "./solid.min.css";
+@import "./tippy.css";
 
 @theme {
   --font-vazir: "Vazirmatn";
@@ -11,5 +15,8 @@
 @layer base {
   * {
     @apply font-vazir;
+  }
+
+  .btn-1 {
   }
 }

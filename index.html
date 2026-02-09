@@ -8,14 +8,23 @@
     <link href="/src/styles/app.css" rel="stylesheet" />
   </head>
   <body class="px-10 bg-primary/10">
-    <header class="h-20 w-full flex items-center">
-      <a class="flex gap-4 items-center" href="">
-        <img alt="" class="size-15" src="/favicon.png" />
+    <header class="h-20 w-full flex items-center justify-between">
+      <a class="flex gap-4 items-center group" href="">
+        <img
+          alt=""
+          class="size-15 group-hover:rotate-[360deg] transition-all duration-200"
+          src="/favicon.png"
+        />
         <div class="flex flex-col justify-center">
           <h1 class="font-rokh font-bold text-xl -m-1 text-red-800">اَوستا</h1>
           <p class="text-sm text-primary">زبان برنامه نویسی فارسی</p>
         </div>
       </a>
+      <div class="flex justify-end items-center">
+        <button class="btn-1" id="run">
+          <i class="fa-solid fa-brands"></i>
+        </button>
+      </div>
     </header>
 
     <script src="/src/scripts/wasm_exec.js"></script>
