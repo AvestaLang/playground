@@ -18,5 +18,9 @@
   }
 
   .btn-1 {
+    @apply rounded-2xl size-12 bg-primary flex justify-center items-center cursor-pointer active:scale-[0.95] transition-all duration-200;
+    & i {
+      @apply text-secondary text-xl;
+    }
   }
 }
