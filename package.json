@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "new": "cp /home/tikrack/Projects/AvestaLang/core/core.wasm ./public && git add . && git commit -m 'New WASM added' && git push"
   },
   "devDependencies": {
     "vite": "^7.1.7"
